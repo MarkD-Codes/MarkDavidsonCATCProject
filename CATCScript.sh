@@ -27,4 +27,6 @@ echo "Current System Overview: " >>MarkDavidson.txt
 top>>MarkDavidson.txt
 echo>>MarkDavidson.txt
 echo "Command History: ">>MarkDavidson.txt
+echo>>MarkDavidson.txt
 history>>MarkDavidson.txt
+echo>>MarkDavidson.txt
