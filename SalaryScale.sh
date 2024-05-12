@@ -14,16 +14,21 @@ read -p "Are you a manager?(Y/N): " manager_boolean
 #Prompt user to input the salary increment
 read -p "Please enter the amount by which your salary increase with each increment: " salary_increment
 
+echo ""
+printf "%-70s\n" "------------------------SALARY TABLE----------------------------"
 
 #Manager Y/N branching using if/else statement
 
 
 if [[ $manager_boolean == Y ]]
 then annual_increment=$(( $salary_increment * 2 )) 
+	echo ""
 	echo "Annual Increment: "  $annual_increment
-	
+	echo ""
+
 elif [[ $manager_boolean == N ]]
 then annual_increment=$(( $salary_increment * 1 ))
+	echo ""
 	echo "Annual Increment: "  $annual_increment
 	echo ""	
 
@@ -42,3 +47,5 @@ for ((i=0; i<=$num_years; i++)); do
     current_year=$(($current_year + 1))
     current_salary=$(($current_salary + $annual_increment))
 done
+
+echo ""
