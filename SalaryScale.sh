@@ -34,6 +34,9 @@ fi
 # Print table header
 printf "%-10s %-20s %-10s %-20s %-10s\n" "|" "Year" "|" "Salary" "|"
 printf "%-70s\n" "----------------------------------------------------------------"
+
+# For loop to generate a table. The year increments by one and salary incrememnts by $annual_increment with each iteration.
+
 for ((i=0; i<=$num_years; i++)); do
     printf "%-10s %-20s %-10s %-20s %-10s\n" "|" "$current_year" "|" "$current_salary" "|"
     current_year=$(($current_year + 1))
